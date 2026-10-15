@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FOOTBALL LIVE 24 — مباريات اليوم، النتائج، وترتيب البطولات.">
+  <meta name="theme-color" content="#07111f">
+  <title>FOOTBALL LIVE 24 | نتائج كرة القدم</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="FOOTBALL LIVE 24">
+      <span class="brand-ball">⚽</span>
+      <span>FOOTBALL <b>LIVE 24</b><small>كل المباريات في مكان واحد</small></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة">☰</button>
+    <nav id="mainNav">
+      <a class="active" href="#matches">المباريات</a>
+      <a href="#leagues">البطولات</a>
+      <a href="#standings">الترتيب</a>
+      <a href="#about">حول الموقع</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow"><i></i> عالم كرة القدم بين يديك</span>
+        <h1>تابع <em>المباريات</em><br>لحظة بلحظة</h1>
+        <p>مواعيد ونتائج كرة القدم بتصميم سريع وسهل على الهاتف.</p>
+        <a class="primary-btn" href="#matches">شوف مباريات اليوم <span>←</span></a>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="big-ball">⚽</div>
+        <div class="score-float"><span>LIVE</span><b>90:00</b><small>مركز النتائج</small></div>
+      </div>
+    </section>
+
+    <section class="ticker">
+      <span class="ticker-label">FOOTBALL LIVE 24</span>
+      <p>كل ما يخص كرة القدم — المواعيد والنتائج والأخبار</p>
+      <span class="ticker-icon">↗</span>
+    </section>
+
+    <section class="content-grid" id="matches">
+      <div class="main-column">
+        <div class="section-heading">
+          <div><span class="section-kicker">تابع كل جديد</span><h2>مباريات اليوم</h2></div>
+          <span class="date-chip" id="todayDate">بتوقيت الجزائر</span>
+        </div>
+        <div class="filter-row" role="group" aria-label="تصفية المباريات">
+          <button class="filter active" data-filter="all">الكل</button>
+          <button class="filter" data-filter="live">مباشر</button>
+          <button class="filter" data-filter="upcoming">قادمة</button>
+          <button class="filter" data-filter="finished">منتهية</button>
+        </div>
+        <div class="notice"><span>ⓘ</span> هذه نسخة تجريبية ببيانات توضيحية. النتائج المباشرة تحتاج ربط مصدر بيانات مرخّص.</div>
+        <div id="matchList" class="match-list"></div>
+        <button class="outline-btn" id="showMore">عرض المزيد</button>
+      </div>
+
+      <aside class="side-column">
+        <div class="side-card featured-card">
+          <div class="side-title"><span>✦</span> بطولات مميزة</div>
+          <a class="league-link" href="#leagues"><span class="league-icon">🏆</span><span><b>دوري أبطال أوروبا</b><small>UEFA Champions League</small></span><span class="chevron">‹</span></a>
+          <a class="league-link" href="#leagues"><span class="league-icon">🏴</span><span><b>الدوري الإنجليزي</b><small>Premier League</small></span><span class="chevron">‹</span></a>
+          <a class="league-link" href="#leagues"><span class="league-icon">🇪🇸</span><span><b>الدوري الإسباني</b><small>La Liga</small></span><span class="chevron">‹</span></a>
+          <a class="league-link" href="#leagues"><span class="league-icon">🇮🇹</span><span><b>الدوري الإيطالي</b><small>Serie A</small></span><span class="chevron">‹</span></a>
+          <a class="league-link" href="#leagues"><span class="league-icon">🇩🇿</span><span><b>الدوري الجزائري</b><small>Ligue Professionnelle 1</small></span><span class="chevron">‹</span></a>
+        </div>
+        <div class="side-card ad-card">
+          <span class="ad-label">مساحة إعلانية</span>
+          <div class="ad-symbol">✦</div>
+          <h3>إعلانك هنا</h3>
+          <p>بعد قبول الموقع في شبكة إعلانات، يمكنك وضع الإعلان في هذه المساحة.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="leagues-section" id="leagues">
+      <div class="section-heading"><div><span class="section-kicker">أبرز المنافسات</span><h2>البطولات</h2></div></div>
+      <div class="league-grid">
+        <div class="league-tile"><span>🏆</span><b>دوري أبطال أوروبا</b><small>UEFA Champions League</small></div>
+        <div class="league-tile"><span>🏴</span><b>الدوري الإنجليزي</b><small>Premier League</small></div>
+        <div class="league-tile"><span>🇪🇸</span><b>الدوري الإسباني</b><small>La Liga</small></div>
+        <div class="league-tile"><span>🇮🇹</span><b>الدوري الإيطالي</b><small>Serie A</small></div>
+        <div class="league-tile"><span>🇩🇪</span><b>الدوري الألماني</b><small>Bundesliga</small></div>
+        <div class="league-tile"><span>🇩🇿</span><b>الدوري الجزائري</b><small>Ligue 1 Mobilis</small></div>
+      </div>
+    </section>
+
+    <section class="standings-section" id="standings">
+      <div class="section-heading"><div><span class="section-kicker">مثال توضيحي فقط</span><h2>ترتيب الدوري</h2></div></div>
+      <div class="table-wrap">
+        <table><thead><tr><th>#</th><th>الفريق</th><th>لعب</th><th>نقاط</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>🔴 فريق تجريبي A</td><td>0</td><td>0</td></tr>
+          <tr><td>2</td><td>🔵 فريق تجريبي B</td><td>0</td><td>0</td></tr>
+          <tr><td>3</td><td>🟢 فريق تجريبي C</td><td>0</td><td>0</td></tr>
+        </tbody></table>
+      </div>
+      <p class="table-note">الترتيب أعلاه ليس ترتيباً حقيقياً. يلزم ربط API موثوق لتحديثه تلقائياً.</p>
+    </section>
+
+    <section class="about-section" id="about">
+      <div><span class="section-kicker">من نحن</span><h2>كرة القدم أقرب إليك</h2></div>
+      <p>FOOTBALL LIVE 24 مشروع لمتابعة أخبار ومواعيد ونتائج كرة القدم. نعمل على تطوير الموقع وإضافة بيانات موثوقة ومحتوى أصلي.</p>
+      <div class="about-links"><a href="privacy.html">سياسة الخصوصية</a><a href="contact.html">اتصل بنا</a></div>
+    </section>
+  </main>
+
+  <footer><a class="footer-brand" href="#">⚽ FOOTBALL LIVE 24</a><span>© <span id="year"></span> جميع الحقوق محفوظة</span><span>صُنع لعشاق كرة القدم</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
